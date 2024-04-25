@@ -1,10 +1,22 @@
+import 'modern-normalize';
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { App } from 'components/App';
+import { createRoot } from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import { Toaster } from 'react-hot-toast';
+import store from './redux/store';
+import App from 'components/App';
+import GlobalStyles from 'assets/styles/GlobalStyles';
 import './index.css';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <BrowserRouter basename="/goit-test-task">
+        <Toaster />
+        <GlobalStyles />
+        <App />
+      </BrowserRouter>
+    </Provider>
   </React.StrictMode>
 );
