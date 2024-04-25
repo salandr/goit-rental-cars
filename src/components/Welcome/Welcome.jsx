@@ -12,10 +12,10 @@ const Welcome = () => {
   return (
     <WelcomeContainer>
       <TextContainer>
-        <Title>RentalCampers</Title>
+        <Title>CampersUA</Title>
         <TextWrap>
           <Paragraph>
-            At RentalCampers, we're passionate about fostering unforgettable
+            At CampersUA, we're passionate about fostering unforgettable
             experiences in the great outdoors. Whether you're a seasoned camper
             or a first-time adventurer, we're here to simplify your journey by
             connecting you with the perfect camper rental for your next
@@ -30,8 +30,8 @@ const Welcome = () => {
           <Paragraph>
             Whether you're planning a weekend getaway, a cross-country road
             trip, or anything in between, we've got you covered. So why wait?
-            Start your next adventure with RentalCampers today and let the
-            journey begin!
+            Start your next adventure with CampersUA today and let the journey
+            begin!
           </Paragraph>
         </TextWrap>
       </TextContainer>

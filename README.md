@@ -1,4 +1,4 @@
-# RentalCampers
+# CampersUA
 
 <a name="readme-top"></a>
 
@@ -6,8 +6,8 @@
 
 <a name="about-the-project"></a>
 
-At RentalCampers, we're passionate about fostering unforgettable experiences in
-the great outdoors. Whether you're a seasoned camper or a first-time adventurer,
+At CampersUA, we're passionate about fostering unforgettable experiences in the
+great outdoors. Whether you're a seasoned camper or a first-time adventurer,
 we're here to simplify your journey by connecting you with the perfect camper
 rental for your next escapade.
 
@@ -18,6 +18,6 @@ a few clicks away.
 
 Whether you're planning a weekend getaway, a cross-country road trip, or
 anything in between, we've got you covered. So why wait? Start your next
-adventure with RentalCampers today and let the journey begin!
+adventure with CampersUA today and let the journey begin!
 
 Project was made as a first test-task for GoIT Neoversity.
