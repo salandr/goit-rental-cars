@@ -35,7 +35,7 @@ const {
   BedsIcon,
   HeartIcon,
   StarIcon,
-  MapPinIcon,
+
   AcIcon,
 } = Icons;
 
@@ -102,7 +102,6 @@ const AdvertItem = ({ advert }) => {
               </span>
             </RatingContainer>
             <Location>
-              <MapPinIcon size={16} />
               <span> {renderLocation}</span>
             </Location>
           </RatingWrapper>

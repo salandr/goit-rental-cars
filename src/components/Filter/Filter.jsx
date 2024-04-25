@@ -21,7 +21,7 @@ import {
   AutomaticIcon,
   FullyIcon,
   KitchenIcon,
-  MapPinIcon,
+
   ShowerIcon,
   TvIcon,
   VanIcon,
@@ -68,7 +68,6 @@ const Filter = () => {
                 </Option>
               ))}
             </Select>
-            <MapPinIcon size={20} />
           </LocationLabel>
         </FormWrapper>
 

@@ -14,6 +14,8 @@ export const ModalBackdrop = styled.div`
 `;
 
 export const ModalContent = styled.div`
+  display: flex;
+  flex-direction: column;
   position: relative;
   max-width: 982px;
   max-height: 90vh;

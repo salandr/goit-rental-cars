@@ -15,7 +15,7 @@ import {
   ModalWrap,
 } from './Modal.styled';
 
-import { CloseIcon, MapPinIcon, StarIcon } from 'components/Icons';
+import { CloseIcon, StarIcon } from 'components/Icons';
 import {
   Location,
   Price,
@@ -68,18 +68,19 @@ const Modal = ({ advert, closeModal }) => {
         >
           <CloseIcon size={40} />
         </CloseButton>
-        <Title style={{ marginBottom: '10px' }}>{name}</Title>
-        <RatingWrapper style={{ marginBottom: '16px' }}>
-          <RatingContainer>
-            <StarIcon size={20} color={'var(--color-rating)'} />
-            <span>{`${rating}(${reviews.length} Reviews)`}</span>
-          </RatingContainer>
-          <Location>
-            <MapPinIcon size={20} />
-            <span>{renderLocation}</span>
-          </Location>
-        </RatingWrapper>
-        <Price style={{ marginBottom: '24px' }}>&euro;{formattedPrice}</Price>
+        <div>
+          <Title style={{ marginBottom: '10px' }}>{name}</Title>
+          <RatingWrapper style={{ marginBottom: '16px' }}>
+            <RatingContainer>
+              <StarIcon size={20} color={'var(--color-rating)'} />
+              <span>{`${rating}(${reviews.length} Reviews)`}</span>
+            </RatingContainer>
+            <Location>
+              <span>{renderLocation}</span>
+            </Location>
+          </RatingWrapper>
+          <Price style={{ marginBottom: '24px' }}>&euro;{formattedPrice}</Price>
+        </div>
         <SideContent>
           <ImageList>
             {gallery.length > 0 &&

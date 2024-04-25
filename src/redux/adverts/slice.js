@@ -1,6 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { handlePending, handleRejected } from '../helpers';
 import { getAdverts } from './operations';
+import { checkDuplicates } from '../helpers';
 
 const loadFavoritesFromLocalStorage =
   JSON.parse(localStorage.getItem('favorites')) || [];
@@ -36,7 +37,9 @@ export const advertsSlice = createSlice({
       .addCase(getAdverts.pending, handlePending)
 
       .addCase(getAdverts.fulfilled, (state, { payload }) => {
-        state.adverts = [...state.adverts, ...payload];
+        state.adverts = checkDuplicates(state.adverts, payload)
+          ? state.adverts
+          : [...state.adverts, ...payload];
         state.isLoading = false;
         state.error = null;
       })
